@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    @model MVCSite.Models.Review
+
+    @{
+    ViewBag.Title = "Details";
+    }
+
+    <h2>Details</h2>
+
+    <div class="container">
+        <h4>Review</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.Category.Location)
+                @Html.DisplayFor(model => model.Category.Location)
+            </div>
+
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayFor(model => model.Title)
+            </div>
+
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.Content)
+                @Html.DisplayFor(model => model.Content)
+            </div>
+
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.PublishedDate)
+                @Html.DisplayFor(model => model.PublishedDate)
+            </div>
+
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.ReturnAgain)
+                @Html.DisplayFor(model => model.ReturnAgain)
+            </div>
+
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+
+</body>
+</html>
+
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnAgain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnAgain)
+        </dd>
+
+    </dl>
+</div>
